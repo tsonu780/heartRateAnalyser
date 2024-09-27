@@ -117,28 +117,29 @@ Example error response:
 
 ## Project Structure
 
+```plaintext
 project-root/
 │
-|-- controllers/
-│   '-- heartRateController.js    # Contains the logic for handling requests
+├── controllers/
+│   └── heartRateController.js    # Contains the logic for handling requests 
 │
-|-- services/
-│   '-- heartRateService.js       # Contains business logic for processing heart rate data
+├── services/
+│   └── heartRateService.js       # Contains business logic for processing heart rate data
 │
-|-- streams/
-│   '-- HeartRateDataStream.js    # Handles incoming heart rate data as a stream
+├── streams/
+│   └── HeartRateDataStream.js    # Handles incoming heart rate data as a stream
 │
-|-- routes/
-│   '-- heartRateRoutes.js        # API routes for heart rate processing
+├── routes/
+│   └── heartRateRoutes.js        # API routes for heart rate processing
 │
-|-- middlewares/
-│   '-- compressionMiddleware.js  # Middleware for response compression
-│   '-- errorHandler.js           # Global error handler middleware
+├── middlewares/
+│   ├── compressionMiddleware.js  # Middleware for response compression
+│   └── errorHandler.js           # Global error handler middleware
 │
-|-- app.js                        # Main application file
-|-- server.js                     # Entry point to start the server
-|-- package.json                  # Project dependencies and scripts
-
+├── app.js                        # Main application file
+├── server.js                     # Entry point to start the server
+└── package.json                  # Project dependencies and scripts
+```
 
 ---
 
